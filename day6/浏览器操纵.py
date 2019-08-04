@@ -1,11 +1,10 @@
+import os
 import time
-
 from selenium import webdriver
 
 
+path = 'chromedriver.exe'
 
-
-path = r'E:\工作区\WebCrawler\day6\chromedriver_win32\chromedriver.exe'
 # 创建谷歌浏览器对象
 browser = webdriver.Chrome(executable_path=path)
 
@@ -28,10 +27,7 @@ time.sleep(3)
 #//*[@id="1"]/h3/a
 a_href = browser.find_elements_by_xpath('//*[@id="2"]/h3/a')[0]
 a_href.click()
-time.sleep(20)
-
-
-
+time.sleep(10)
 
 # 退出浏览器
 browser.quit()

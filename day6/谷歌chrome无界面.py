@@ -1,3 +1,5 @@
+import os
+
 from selenium import webdriver
 import time
 
@@ -6,7 +8,7 @@ chrome_options = Options()
 chrome_options.add_argument('--headless')
 chrome_options.add_argument('--disable-gpu')
 
-path = r'E:\FeiQ文件\爬虫\day06\chromedriver_win32\chromedriver.exe'
+path = 'chromedriver.exe'
 # 创建谷歌浏览器对象
 browser = webdriver.Chrome(executable_path=path, chrome_options=chrome_options)
 
